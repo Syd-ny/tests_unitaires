@@ -11,7 +11,6 @@ class TestConsoleApp(unittest.TestCase):
         self.assertEqual(process_input("radar"), ("Bien dit!", "Well said!", "Хорошо сказано!"))
         self.assertEqual(process_input("hello"), "hello")
 
-    # These tests might need to be adjusted depending on the time of day they are run
     def test_time_based_greetings(self):
         greeting = get_time_based_greeting()
         self.assertIn(greeting, [("Bonjour", "Good morning", "Доброе утро"), 
