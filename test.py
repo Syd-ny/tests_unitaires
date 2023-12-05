@@ -21,10 +21,10 @@ class TestConsoleApp(unittest.TestCase):
 
     def test_time_based_farewells(self):
         farewell = get_time_based_farewell()
-        self.assertIn(farewell, ["Au revoir, bonne matinée",
-                                 "Au revoir, bonne après-midi",
-                                 "Au revoir, bonne soirée",
-                                 "Au revoir, bonne nuit"])
+        self.assertIn(farewell, ["Au revoir, bonne matinée, До свидания, доброе утро",
+                                 "Au revoir, bonne après-midi, До свидания, добрый день",
+                                 "Au revoir, bonne soirée, До свидания, приятного вечера",
+                                 "Au revoir, bonne nuit, До свидания, спокойной ночи"])
 
 if __name__ == '__main__':
     unittest.main()
