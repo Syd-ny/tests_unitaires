@@ -1,5 +1,11 @@
 from datetime import datetime
 
+def process_input(user_input):
+    if is_palindrome(user_input.replace(" ", "").lower()):
+        return "Bien dit!", "Well said!", "Хорошо сказано!"
+    else:
+        return user_input
+
 def is_palindrome(s):
     return s == s[::-1]
 
